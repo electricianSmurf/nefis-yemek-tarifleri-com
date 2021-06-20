@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "nefis-yemek-tarifleri-com", "nefis-yemek-tarifleri-com\", "{701D8BB5-7C7E-4455-A53F-025073CBB244}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_14904"
+		Debug.AspNetCompiler.PhysicalPath = "nefis-yemek-tarifleri-com\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14904\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_14904"
+		Release.AspNetCompiler.PhysicalPath = "nefis-yemek-tarifleri-com\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_14904\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "14904"
+		SlnRelativePath = "nefis-yemek-tarifleri-com\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{701D8BB5-7C7E-4455-A53F-025073CBB244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701D8BB5-7C7E-4455-A53F-025073CBB244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25272FF9-B82C-4F48-8A36-341CEE075A8F}
+	EndGlobalSection
+EndGlobal
