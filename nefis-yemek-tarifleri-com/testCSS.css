@@ -1,4 +1,4 @@
-﻿.aMain{
+﻿.aMain {
     text-decoration: none;
     color: black;
     background-color: #ddd6d6;
@@ -8,18 +8,106 @@
     font-size: 13.5px;
     justify-content: space-between;
     align-items: center;
-    margin-left:180px;
+    margin-left: 180px;
 }
-.pLogin{
-    background-color:transparent;
-    align-items:center;
-    margin-top:10px;
-    margin-left:10px;
+
+.divLogin {
+    border-style: solid;
+    border-width: 1px;
+    height: 46px;
+    width: 120px;
+    float: right;
+    margin-right: 180px;
+    margin-left: 16px;
+    margin-top: 12px;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
+
+.pIcon {
+    background-color: transparent;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.pLoginText {
+    float: right;
+    margin-right: 6px;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.divSendRecipe {
+    border-style: solid;
+    border-width: 1px;
+    width: 140px;
+    height: 46px;
+    float: right;
+    margin-top: 12px;
+    border-width: 1px;
+    background-color: #ff6a00;
+    border-radius: 5px;
+}
+
+.pSendRecipe {
+    background-color: transparent;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.divSearch {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 426px;
+    height: 46px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 16px;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+
+    .divSearch:hover { /*burda geri kalan ekranın arka planı değişecek*/
+        background-color: #bb9898;
+    }
+
+    .divSearch input[type=search] {
+        all: unset;
+        font: 16px system-ui;
+        color: #fff;
+        height: 100%;
+        width: 360px;
+        padding-left: 6px;
+        float: left;
+    }
+
+    .divSearch button {
+        all: unset;
+        cursor: pointer;
+        width: 60px;
+        height: 100%;
+        float: right;
+        font-size: 16px;
+        font-weight: lighter;
+        background-color: #d91616;
+        text-align: center;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+        .divSearch button:hover {
+            font-size: 20px;
+        }
+
 .aAnchor {
     width: 100px;
     height: 30px;
 }
+
 .table {
     border-collapse: collapse;
     table-layout: fixed;
@@ -28,6 +116,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+    .table a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+        .table a:active {
+            background-color: #b6ff00;
+        }
+
 .td {
     width: 25%;
     font-size: 15px;
@@ -36,6 +135,12 @@
     position: relative;
     border: 1px solid;
 }
+
+    .td:hover {
+        background-color: #9d0b0b;
+        color: white;
+    }
+
 .image {
     height: 40px;
     width: 40px;
