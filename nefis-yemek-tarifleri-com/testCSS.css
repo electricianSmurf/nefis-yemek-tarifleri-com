@@ -71,11 +71,50 @@
     background-color: #ffffff;
 }
 
-    .divSearch:hover { /*burda geri kalan ekranın arka planı değişecek*/
-        background-color: #bb9898;
+    .divSearch .divSearchContainer {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        width: 426px;
+        height: 200px;
+        float: right;
+        margin-top: 2px;
+        border-width: 1px;
+        background-color: #ffffff;
+        z-index: 1;
+        position: relative;
+        display: none;
     }
 
-    .divSearch input[type=search] {
+    .divSearch:hover .divSearchContainer { /*burda geri kalan ekranın arka planı değişecek*/
+        display: block;
+        background-color: #ffffff;
+    }
+
+    .divSearch .divSearchContainer span {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .divSearch .divSearchContainer a {
+        display: inline-block;
+        background-color: #ddd6d6;
+        width: 80px;
+        height: 24px;
+        padding: 3px 0 0 0;
+        margin: 4px 0 0 8px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .divSearch input[type=search]{
         all: unset;
         font: 16px system-ui;
         color: #fff;
@@ -88,12 +127,13 @@
     .divSearch button {
         all: unset;
         cursor: pointer;
-        width: 60px;
+        width: 46px;
         height: 100%;
         float: right;
         font-size: 16px;
         font-weight: lighter;
         background-color: #d91616;
+        color: white;
         text-align: center;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -102,11 +142,6 @@
         .divSearch button:hover {
             font-size: 20px;
         }
-
-.aAnchor {
-    width: 100px;
-    height: 30px;
-}
 
 .table {
     border-collapse: collapse;
@@ -123,23 +158,36 @@
         font-weight: bold;
     }
 
-        .table a:active {
-            background-color: #b6ff00;
+        .table a:focus {
+            background-color: #ff6a00;
         }
 
-.td {
-    width: 25%;
-    font-size: 15px;
-    text-align: center;
-    vertical-align: top;
-    position: relative;
-    border: 1px solid;
-}
-
-    .td:hover {
-        background-color: #9d0b0b;
-        color: white;
+    .table td {
+        width: 25%;
+        font-size: 15px;
+        text-align: center;
+        vertical-align: top;
+        position: relative;
+        border: 1px solid;
     }
+        .table td .divContainer {
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            width: 732px;
+            height: 400px;
+            margin-top: 52px;
+            border-width: 1px;
+            background-color: #ffffff;
+            z-index: 1;
+            position: absolute;
+            display: none;
+        }
+
+        .table td:hover .divContainer {
+            background-color: #b50c0c;
+            display: block;
+        }
 
 .image {
     height: 40px;

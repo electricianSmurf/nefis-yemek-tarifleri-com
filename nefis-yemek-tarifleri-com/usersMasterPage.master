@@ -24,7 +24,8 @@
             <a href="mainPage.aspx" class="aMain"><i class="fas fa-home"></i>MAIN PAGE</a>     <%-- &nbsp;--%>
         </div>
         <div style="height: 70px; background-color: #ffffff">
-            <asp:Image ID="Image1" runat="server" Height="45px" Width="120px" ImageUrl="pics/logo.png" title="Logo" Style="margin-left: 180px; margin-top: 12px; float: left;" />
+            <a href="mainPage.aspx">
+                <asp:Image ID="Image1" runat="server" Height="45px" Width="120px" ImageUrl="pics/logo.png" title="Logo" Style="margin-left: 180px; margin-top: 12px; float: left;" /></a>
             <div class="divLogin">
                 <p class="pLoginText">
                     <strong>Log In<br />
@@ -39,20 +40,37 @@
             <div class="divSearch">
                 <input type="search" id="query" name="q" placeholder="Search cook or recipe..." />
                 <button><i class="fas fa-search"></i></button>
+                <div class="divSearchContainer">
+                    <div>
+                        <span>Popular Searchs</span><br />
+                        <a href="#">cake</a>
+                        <a href="#">cookie</a>
+                        <a href="#">pasta</a>
+                        <a href="#">dessert</a>
+                        <a href="#">wet cake</a>
+                        <a href="#">browni</a>
+                        <a href="#">pastry</a>
+                    </div>
+                    <div><span>My Last Searchs</span></div>
+                </div>
             </div>
         </div>
-        <div style="height: 70px; background-color: #d91616">
+        <div style="z-index: -1; height: 70px; background-color: #d91616;">
             <table class="table">
                 <tr>
-                    <td class="td"><a class="active" href="recipesPage.aspx">RECIPES<img class="image" src="pics/cook book.png" /></a></td>
-                    <td class="td"><a class="active" href="videosPage.aspx">VIDEOS<img class="image" src="pics/camera.png" /></a></td>
-                    <td class="td"><a class="active" href="trendsPage.aspx">TRENDS<img class="image" src="pics/trends.png" /></a></td>
-                    <td class="td"><a class="active" href="suggestionsPage.aspx">SUGGESTIONS?<img class="image" src="pics/what should i cook.png" /></a></td>
+                    <td class="td"><a href="recipesPage.aspx">RECIPES<img class="image" src="pics/cook book.png" /></a>
+                        <div class="divContainer">recipes</div>
+                    </td>
+                    <td class="td"><a href="videosPage.aspx">VIDEOS<img class="image" src="pics/camera.png" /></a>
+                        <div class="divContainer" style="margin-left:-124px;">videos</div>
+                    </td>
+                    <td class="td"><a href="trendsPage.aspx">TRENDS<img class="image" src="pics/trends.png" /></a></td>
+                    <td class="td"><a href="suggestionsPage.aspx">SUGGESTIONS?<img class="image" src="pics/what should i cook.png" /></a></td>
                 </tr>
             </table>
         </div>
 
-        <div style="width: 800px; height: 1000px; margin-left: auto; margin-right: auto; background-color: #D9FFFF">
+        <div style="width: 1000px; height: 1000px; margin-left: auto; margin-right: auto; background-color: #D9FFFF">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
