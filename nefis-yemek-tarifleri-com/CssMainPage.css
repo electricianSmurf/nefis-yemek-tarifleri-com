@@ -1,0 +1,60 @@
+﻿section {
+    width: 1000px;
+    height: auto;
+}
+
+div .container {
+    width: 980px;
+    height: 200px;
+    margin: 0 10px 0 10px;
+    background-color: aqua;
+}
+
+.container header {
+    display: block;
+    height: 50px;
+}
+
+    .container header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container header h1 {
+        display: inline-block;
+        float: left;
+    }
+
+    .container header ul {
+        list-style-type: none;
+        float: right;
+        height: auto;
+        width: auto;
+    }
+
+        .container header ul li {
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+            .container header ul li a {
+                font-size: 13.3px;
+                font-weight: bold;
+                font-family: Verdana;
+                color: gray;
+                text-decoration: none;
+            }
+
+                .container header ul li a:hover {
+                    color: black;
+                    text-decoration:underline;
+                }
+
+    .container header h1 span {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: Verdana;
+        margin-left: 0;
+    }

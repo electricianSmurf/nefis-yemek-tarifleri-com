@@ -4,23 +4,11 @@
 <html>
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="./testCSS.css" type="text/css"/>
-
+    <link rel="stylesheet" href="./CssUsersMaster.css" type="text/css" />
     <link rel="stylesheet" href="/fontAwesome/css/all.min.css" />
-<%--    <link rel="stylesheet" href="style.css" />--%>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <%--<style type="text/css">
-        .tableContainerDiv {
-        z-index: -1;
-        height: 70px;
-        background-color: #d91616;
-}
-        .auto-style1 {
-            width: 100%;
-        }
-    </style>--%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -62,32 +50,50 @@
         <div class="tableContainerDiv">
             <table class="table">
                 <tr>
-                    <td class="cell"><a class="aHeader" href="recipesPage.aspx">RECIPES<img class="image" src="pics/cook book.png" /></a>
+                    <td class="cell"><a class="aHeader" href="recipesPage.aspx" onclick="highlightCurrent(this)">RECIPES<img class="image" src="pics/cook book.png" /></a>
                         <div class="divContainer">
                             <div class="divItem">
-                                <ul id="nav">
+                                <ul class="nav">
                                     <li><a href="#">Soaps</a></li>
                                     <li><a href="#">Legume Recipes</a></li>
                                     <li><a href="#">Vegetable Dishes</a></li>
                                     <li><a href="#">Meat Dishes</a></li>
                                 </ul>
                             </div>
-                            <div class="divItem">div2</div>
-                            <div class="divItem">div3</div>
+                            <div class="divItem">
+                                <ul class="nav">
+                                    <li><a href="#">Appetisers</a></li>
+                                    <li><a href="#">Salads</a></li>
+                                    <li><a href="#">Macaronis</a></li>
+                                </ul>
+                            </div>
+                            <div class="divItem">
+                                <ul class="nav">
+                                    <li><a href="#">Pastries</a></li>
+                                    <li><a href="#">Cookies</a></li>
+                                    <li><a href="#">Drinks</a></li>
+                                    <li><a href="#">Fast Foods</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </td>
-                    <td class="cell"><a class="aHeader" href="videosPage.aspx">VIDEOS<img class="image" src="pics/camera.png" /></a>
-                        <div class="divContainer" style="margin-left:-124px;">videos</div>
-                    </td>
-                    <td class="cell"><a class="aHeader" href="trendsPage.aspx">TRENDS<img class="image" src="pics/trends.png" /></a></td>
-                    <td class="cell"><a class="aHeader" href="suggestionsPage.aspx">SUGGESTIONS?<img class="image" src="pics/what should i cook.png" /></a></td>
+                    <td class="cell"><a class="aHeader" href="videosPage.aspx" onclick="highlightCurrent(this)">VIDEOS<img class="image" src="pics/camera.png" /></a></td>
+                    <td class="cell"><a class="aHeader" href="trendsPage.aspx" onclick="highlightCurrent(this)">TRENDS<img class="image" src="pics/trends.png" /></a></td>
+                    <td class="cell"><a class="aHeader" href="suggestionsPage.aspx" onclick="highlightCurrent(this)">SUGGESTIONS?<img class="image" src="pics/what should i cook.png" /></a></td>
                 </tr>
             </table>
         </div>
-        <div style="width: 1000px; height: 1000px; margin-left: auto; margin-right: auto; background-color: #D9FFFF">
+        <div style="width: 1000px; height: auto; margin-left: auto; margin-right: auto; background-color: #088989">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+
+
 </body>
+<script>
+    function highlightCurrent(asd) {
+        asd.className = "active";
+    }
+</script>
 </html>
